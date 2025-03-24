@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+@import "tailwindcss";
+
+@theme {
+	--font-rubik: "Rubik", sans-serif;
+	--color-gray: #757575;
+	--color-primary: #8BAC3E;
+	--breakpoint-xl: 72rem;
+	--breakpoint-lg: 60rem;
+}
+
+body {
+	@apply font-rubik;
+	/* @apply font-rubik bg-[url(/img/body-bg.jfif)] bg-fixed h-fit bg-cover; */
+}
+
+.cursor-box {
+	@apply rounded-4xl px-6 py-3 cursor-pointer flex
+  bg-primary justify-center items-center text-center relative overflow-hidden;
+    transition: all 0.3s ease;
+}
+
+.cursor-box::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, transparent, rgba(255,255,255,0.1), transparent);
+    top: -100%;
+    left: -100%;
+    transition: all 0.5s ease;
+}
+
+.cursor-box:hover::before {
+    top: 100%;
+    left: 100%;
+}
+
+.copy {
+    background: linear-gradient(145deg, #8BAC3E, #8BAC3E);
+    border: 2px solid #8BAC3E;
+}
+.copy:hover {
+    box-shadow: 4px 4px 0 #badb6b;
+}
