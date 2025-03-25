@@ -30,7 +30,7 @@ useHead({
                     </div>
                     <div class="lg:py-0 py-10 hidden lg:block">
                         <img src="/img/food.png" alt=""
-                            class="lg:h-[60vh] h-72 w-72 lg:w-full lg:p-12 p-8 bg-gray-50 rounded-full">
+                            class="lg:h-[60vh] max-h-[412px] h-72 w-72 lg:w-full lg:p-12 p-8 bg-gray-50 rounded-full">
                     </div>
                 </div>
             </div>
