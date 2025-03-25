@@ -3,21 +3,24 @@
 @import "tailwindcss";
 
 @theme {
-	--font-rubik: "Rubik", sans-serif;
-	--color-gray: #757575;
-	--color-primary: #8BAC3E;
-	--breakpoint-xl: 72rem;
-	--breakpoint-lg: 60rem;
+    --font-rubik: "Rubik", sans-serif;
+    --color-gray: #757575;
+    --color-primary: #8BAC3E;
+    --breakpoint-xl: 72rem;
+    --breakpoint-lg: 60rem;
 }
 
 body {
-	@apply font-rubik;
-	/* @apply font-rubik bg-[url(/img/body-bg.jfif)] bg-fixed h-fit bg-cover; */
+    @apply font-rubik;
+    /* @apply font-rubik bg-[url(/img/body-bg.jfif)] bg-fixed h-fit bg-cover; */
+}
+
+.bg-literal-primary {
+    background: #8BAC3E;
 }
 
 .cursor-box {
-	@apply rounded-4xl px-6 py-3 cursor-pointer flex
-  bg-primary justify-center items-center text-center relative overflow-hidden;
+    @apply rounded-4xl px-6 py-3 cursor-pointer flex bg-primary justify-center items-center text-center relative overflow-hidden;
     transition: all 0.3s ease;
 }
 
@@ -26,7 +29,7 @@ body {
     position: absolute;
     width: 100%;
     height: 100%;
-    background: linear-gradient(45deg, transparent, rgba(255,255,255,0.1), transparent);
+    background: linear-gradient(45deg, transparent, rgba(255, 255, 255, 0.1), transparent);
     top: -100%;
     left: -100%;
     transition: all 0.5s ease;
@@ -37,10 +40,93 @@ body {
     left: 100%;
 }
 
-.copy {
+.animated-button {
     background: linear-gradient(145deg, #8BAC3E, #8BAC3E);
     border: 2px solid #8BAC3E;
 }
-.copy:hover {
-    box-shadow: 4px 4px 0 #badb6b;
+
+
+
+.hover-underline-primary {
+    position: relative;
+    display: inline-block;
+}
+
+.hover-underline-primary::after,
+.hover-underline-primary::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background: #8BAC3E;
+    bottom: -1px;
+    left: 0;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.1s ease-out;
+}
+
+.hover-underline-primary:hover::after,
+.hover-underline-primary:hover::before {
+    transform: scaleX(1);
+}
+
+.hover-underline-gray {
+    position: relative;
+    display: inline-block;
+}
+
+.hover-underline-gray::after,
+.hover-underline-gray::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background: #4a5565;
+    bottom: -1px;
+    left: 0;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.2s ease-out;
+}
+
+.hover-underline-gray::before {
+    transform-origin: left;
+}
+
+.hover-underline-gray:hover::after,
+.hover-underline-gray:hover::before {
+    transform: scaleX(1);
+}
+
+.hover-underline-black {
+    position: relative;
+    display: inline-block;
+}
+
+.hover-underline-black::after,
+.hover-underline-black::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background: #757575;
+    bottom: -1px;
+    left: 0;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.2s ease-out;
+}
+
+.hover-underline-black::before {
+    transform-origin: left;
+}
+
+.hover-underline-black:hover::after,
+.hover-underline-black:hover::before {
+    transform: scaleX(1);
+}
+
+.btn-daftar {
+    @apply text-white text-sm! bg-primary w-[180px] h-[50px] rounded-3xl;
 }
