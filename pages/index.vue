@@ -5,7 +5,7 @@ useHead({
 </script>
 <template>
     <NuxtLayout>
-        <div class="sm:h-[60vh] min-h-[340px] py-4">
+        <div class="h-[60vh] sm:max-h-[420px] min-h-fit py-4">
             <div class="h-full sm:justify-between min-h-fit sm:items-center relative">
                 <div class="bg-[url('/img/body-bg.jfif')] bg-cover h-full w-full opacity-[2%]"></div>
                 <div class="absolute top-0 left-0 w-full h-full lg:flex items-center justify-between">
@@ -28,9 +28,11 @@ useHead({
                             <div class="bg-gray-200 py-3 px-6 rounded-4xl cursor-pointer shadow-xl">About Us</div>
                         </div>
                     </div>
-                    <div class="lg:py-0 py-10 hidden lg:block">
-                        <img src="/img/food.png" alt=""
-                            class="lg:h-[60vh] max-h-[412px] h-72 w-72 lg:w-full lg:p-12 p-8 bg-gray-50 rounded-full">
+                    <div class="lg:py-0 py-10 hidden lg:block h-full">
+                        <div class="lg:h-full lg:p-12 p-8 bg-gray-50 rounded-full">
+                            <img src="/img/food.png" alt=""
+                                class="sm:h-full max-h-[412px]w-72 lg:w-full">
+                        </div>
                     </div>
                 </div>
             </div>

@@ -6,4 +6,5 @@ const { y } = useWindowScroll();
     <div class="xl:mx-28 px-3">
         <slot />
     </div>
+    <Footer/>
 </template>
