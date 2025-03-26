@@ -1,3 +1,9 @@
+# Tech & lib
+- Nuxt v.3.16
+- Tailwind
+- Swiper.js
+- NuxtIcon
+  
 # Nuxt Minimal Starter
 
 Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
