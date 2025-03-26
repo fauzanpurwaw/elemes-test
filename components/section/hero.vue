@@ -14,7 +14,7 @@
                         <div class="w-fit relative">
                             <img src="/img/food.png" alt=""
                                 class="h-62 w-62  max-w-[360px] lg:w-full lg:p-12 p-6 bg-gray-50 rounded-full">
-                            <BlurCardHero />
+                            <SectionHeroBlurCardHero />
                         </div>
                     </div>
                     <div class="text-gray sm:text-md/relaxed text-sm/loose font-medium lg:pt-8 pt-4 ">
