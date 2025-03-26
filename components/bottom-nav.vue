@@ -6,12 +6,12 @@
                 <span class="text-primary text-xs">Home</span>
             </div>
             <div class="flex flex-col items-center justify-center w-1/4 cursor-pointer">
-                <Icon name="ph:shopping-bag" class="text-gray text-2xl" />
-                <span class="text-gray-500 text-xs">Receipt</span>
+                <Icon name="lsicon:badge-promotion-outline" class="text-gray text-2xl" />
+                <span class="text-gray-500 text-xs">Promotion</span>
             </div>
             <div class="flex flex-col items-center justify-center w-1/4 cursor-pointer">
-                <Icon name="ph:user" class="text-gray text-2xl" />
-                <span class="text-gray-500 text-xs">Profile</span>
+                <Icon name="material-symbols:menu-rounded" class="text-gray text-2xl" />
+                <span class="text-gray-500 text-xs">Other</span>
             </div>
         </div>
     </div>
