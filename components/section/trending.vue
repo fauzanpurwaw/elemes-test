@@ -7,7 +7,7 @@ const getCategoryColor = (name: string): string | undefined => {
 </script>
 
 <template>
-    <div class="flex h-full w-full mt-20">
+    <div class="flex h-full w-full mt-20 animate-fade-in-scale">
         <div class="flex flex-col gap-3">
             <div class="text-3xl font-semibold hover-underline-black w-fit">Browse Our Trending</div>
             <div class="text-primary text-3xl font-semibold hover-underline-primary w-fit">Receipt</div>

@@ -2,7 +2,7 @@
 import { categories } from '../storage.json';
 </script>
 <template>
-    <div class="flex w-full mt-50 gap-4 flex-wrap sm:mb-0 mb-28">
+    <div class="flex w-full mt-50 gap-4 flex-wrap sm:mb-0 mb-28 animate-fade-in-scale">
         <div class="flex flex-col gap-3 w-96">
             <img src="/img/elemesid.png" alt="" class="w-[200px] h-14">
             <div class="text-sm text-gray  mt-1">
