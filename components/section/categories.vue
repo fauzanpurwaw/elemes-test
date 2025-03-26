@@ -35,8 +35,8 @@ const swiper = useSwiper(containerRef)
             <button
                 class="btn-daftar cursor-box h-fit! w-fit! animated-button shadow-xl flex cursor-pointer hover:-translate-0.5 duration-200 items-center gap-2 bg-primary text-white px-4! py-2! rounded-full"
                 @click="swiper.prev()">
+               <Icon name="tabler:circle-chevron-left-filled" class="bg-white text-2xl" />
                 Prev
-                <Icon name="tabler:circle-chevron-left-filled" class="bg-white text-2xl" />
             </button>
             <!-- Go forward one slide -->
             <button

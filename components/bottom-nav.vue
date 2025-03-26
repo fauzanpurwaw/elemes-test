@@ -1,5 +1,5 @@
 <template>
-    <div class="fixed bottom-0 w-full flex h-20 sm:hidden border-t border-gray-200 bg-white">
+    <div class="fixed bottom-0 w-full flex h-20 sm:hidden border-t border-gray-200 bg-white z-99">
         <div class="flex w-full h-full justify-evenly">
             <div class="flex flex-col items-center justify-center w-1/4 cursor-pointer">
                 <Icon name="lucide:home" class="text-primary text-2xl" />
