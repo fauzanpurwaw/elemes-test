@@ -13,7 +13,7 @@ const getCategoryColor = (name: string): string | undefined => {
             <div class="text-primary text-3xl font-semibold hover-underline-primary w-fit">Receipt</div>
         </div>
     </div>
-    <div class="grid w-full justify-between mt-10 xl:grid-cols-4 lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-5">
+    <div class="grid w-full justify-between mt-10 xl:grid-cols-4 lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-5 animate-fade-in-scale">
         <div v-for="(data, idx) in trending" :key="idx"
             class="w-full h-64 min-w-64 rounded-2xl p-5 flex flex-col gap-3 cursor-pointer"
             :style="{ backgroundColor: getCategoryColor(data.category) }">
@@ -25,7 +25,7 @@ const getCategoryColor = (name: string): string | undefined => {
             </div>
         </div>
     </div>
-    <div class="flex w-full justify-center my-20">
+    <div class="flex w-full justify-center my-20 animate-fade-in-scale">
         <div class="btn-daftar cursor-box animated-button shadow-xl">ALL Receipt</div>
     </div>
 </template>
