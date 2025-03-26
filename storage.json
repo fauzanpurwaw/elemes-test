@@ -1,0 +1,76 @@
+{
+    "categories": [
+        {
+            "name": "Cupcake",
+            "items": 22,
+            "iconPath": "/icon/cupcake.png",
+            "color": "#F0FEEB"
+        },
+        {
+            "name": "Pizza",
+            "items": 25,
+            "iconPath": "/icon/pizza.png",
+            "color": "#E4F2F4"
+        },
+        {
+            "name": "Kebab",
+            "items": 22,
+            "iconPath": "/icon/kebab.png",
+            "color": "#EAEEFA"
+        },
+        {
+            "name": "Salmon",
+            "items": 22,
+            "iconPath": "/icon/salmon.png",
+            "color": "#F9EEF3"
+        },
+        {
+            "name": "Doughnut",
+            "items": 22,
+            "iconPath": "/icon/doughnut.png",
+            "color": "#F3F7D9"
+        }
+    ],
+    "trending": [
+        {
+            "name": "Pizza Paperoni",
+            "category": "Pizza",
+            "rating": 2
+        },
+        {
+            "name": "Pizza Meat",
+            "category": "Pizza",
+            "rating": 1
+        },
+        {
+            "name": "Doner Kebab",
+            "category": "Kebab",
+            "rating": 4
+        },
+        {
+            "name": "Salmon Roll",
+            "category": "Salmon",
+            "rating": 4
+        },
+        {
+            "name": "Cupcake Choco",
+            "category": "Cupcake",
+            "rating": 4
+        },
+        {
+            "name": "Doughnut Milk",
+            "category": "Doughnut",
+            "rating": 4
+        },
+        {
+            "name": "Doughnut Unicorn",
+            "category": "Doughnut",
+            "rating": 4
+        },
+        {
+            "name": "Kathi Kebab",
+            "category": "Kebab",
+            "rating": 3
+        }
+    ]
+}

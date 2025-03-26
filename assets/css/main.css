@@ -7,7 +7,22 @@
     --color-gray: #757575;
     --color-primary: #8BAC3E;
     --breakpoint-xl: 72rem;
-    --breakpoint-lg: 60rem;
+    --breakpoint-lg: 65rem;
+    --breakpoint-sm: 44rem;
+
+    --animate-fade-in-scale: fade-in-scale 0.3s ease-out;
+
+    @keyframes fade-in-scale {
+        0% {
+            opacity: 0;
+            transform: scale(0.95);
+        }
+
+        100% {
+            opacity: 1;
+            transform: scale(1);
+        }
+    }
 }
 
 body {
@@ -44,8 +59,6 @@ body {
     background: linear-gradient(145deg, #8BAC3E, #8BAC3E);
     border: 2px solid #8BAC3E;
 }
-
-
 
 .hover-underline-primary {
     position: relative;
@@ -114,12 +127,8 @@ body {
     bottom: -1px;
     left: 0;
     transform: scaleX(0);
-    transform-origin: right;
-    transition: transform 0.2s ease-out;
-}
-
-.hover-underline-black::before {
     transform-origin: left;
+    transition: transform 0.2s ease-out;
 }
 
 .hover-underline-black:hover::after,
@@ -128,5 +137,5 @@ body {
 }
 
 .btn-daftar {
-    @apply text-white text-sm! bg-primary w-[180px] h-[50px] rounded-3xl;
+    @apply text-white text-sm! bg-primary sm:w-[180px] sm:px-4 px-3 sm:h-[50px] rounded-3xl;
 }
